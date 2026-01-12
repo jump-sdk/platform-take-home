@@ -1,0 +1,28 @@
+{
+  "id": "evt_2def",
+  "object": "event",
+  "type": "payment_intent.payment_failed",
+  "created": 1705315800,
+  "data": {
+    "object": {
+      "id": "pi_456",
+      "object": "payment_intent",
+      "amount": 5000,
+      "currency": "usd",
+      "customer": "cus_abc123",
+      "description": "Subscription payment",
+      "last_payment_error": {
+        "code": "card_declined",
+        "message": "Your card was declined.",
+        "type": "card_error"
+      },
+      "status": "requires_payment_method"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": "req_xyz",
+    "idempotency_key": null
+  }
+}

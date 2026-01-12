@@ -1,0 +1,25 @@
+{
+  "id": "evt_1abc",
+  "object": "event",
+  "type": "payout.failed",
+  "created": 1705315200,
+  "data": {
+    "object": {
+      "id": "po_123",
+      "object": "payout",
+      "amount": 10000,
+      "currency": "usd",
+      "arrival_date": 1705401600,
+      "failure_code": "insufficient_funds",
+      "failure_message": "Insufficient funds in Stripe account",
+      "status": "failed",
+      "type": "bank_account"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  }
+}
