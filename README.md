@@ -44,6 +44,7 @@ Your service must:
 <details>
   <summary>Click to expand/collapse</summary>
 
+
 Accepts Stripe webhook events with signature verification.
 
 **Requirements:**
@@ -67,8 +68,9 @@ curl -X POST http://localhost:3000/ingest/stripe \
 </details>
 ---
 
-### 2. POST `/ingest/pull-status`
-
+#### 2. POST `/ingest/pull-status`
+<details>
+  <summary>Click to expand/collapse</summary>
 Fetches and processes Statuspage.io summary.json from configured URLs.
 
 **Requirements:**
@@ -93,10 +95,14 @@ Fetches and processes Statuspage.io summary.json from configured URLs.
 **Environment Variables:**
 - `SPREEDLY_STATUS_SUMMARY_URL` (optional)
 - `BRAZE_STATUS_SUMMARY_URL` (optional)
-
+</details>
 ---
 
-### 3. POST `/destinations/pagerduty`
+#### 3. POST `/destinations/pagerduty`
+<details>
+  <summary>Click to expand/collapse</summary>
+
+
 
 Mock PagerDuty destination endpoint.
 
@@ -105,10 +111,14 @@ Mock PagerDuty destination endpoint.
 - Log receipt with structured logging
 - Store in memory for verification
 - Return `202 Accepted`
-
+</details>
 ---
 
-### 4. GET `/events`
+#### 4. GET `/events`
+<details>
+  <summary>Click to expand/collapse</summary>
+
+
 
 Query recent normalized events.
 
@@ -136,10 +146,13 @@ Query recent normalized events.
   ]
 }
 ```
-
+</details>
 ---
 
-### 5. GET `/healthz`
+#### 5. GET `/healthz`
+<details>
+  <summary>Click to expand/collapse</summary>
+
 
 Health check endpoint.
 
@@ -147,7 +160,7 @@ Health check endpoint.
 ```json
 { "ok": true }
 ```
-
+</details>
 ---
 
 ## Normalized Event Schema
