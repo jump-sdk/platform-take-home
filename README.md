@@ -13,6 +13,8 @@ Build a small HTTP service that ingests vendor signals from multiple sources (we
 
 This exercise simulates a real-world platform engineering challenge: building reliable, observable infrastructure that integrates multiple third-party services.
 
+*We don't care if you use AI to build this, but be prepared to answer any and all questions about the codebase, why you did certain things and other questions.*
+
 ---
 
 ## Requirements
