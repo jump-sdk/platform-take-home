@@ -24,11 +24,16 @@ This exercise simulates a real-world platform engineering challenge: building re
 Your service must:
 
 1. **Ingest Stripe webhook events** with signature verification
-2. **Poll external status pages** (Statuspage.io format) for Spreedly and Braze
-3. **Normalize** all signals into a unified internal event schema
-4. **Route** critical events to a mock PagerDuty destination
-5. **Store** recent events in memory with idempotency
-6. **Expose** a query API for recent events
+3. **Poll external status pages** (Statuspage.io format) for Spreedly and Braze
+4. **Normalize** all signals into a unified internal event schema
+5. **Route** critical events to a mock PagerDuty destination
+6. **Store** recent events in memory with idempotency
+7. **Expose** a query API for recent events
+
+**External Resources**
+- https://docs.stripe.com/
+- https://braze.statuspage.io/
+- https://status.spreedly.com/
 
 ---
 
@@ -169,7 +174,7 @@ All vendor signals must be normalized to this schema:
 
 ## Normalization Rules
 
-### Stripe Events
+### Stripe Events (https://docs.stripe.com/)
 
 Support at least these event types:
 
