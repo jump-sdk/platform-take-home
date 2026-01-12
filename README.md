@@ -39,7 +39,10 @@ Your service must:
 
 ## API Specification
 
-### 1. POST `/ingest/stripe`
+#### 1. POST `/ingest/stripe`
+
+<details>
+  <summary>Click to expand/collapse</summary>
 
 Accepts Stripe webhook events with signature verification.
 
@@ -61,7 +64,7 @@ curl -X POST http://localhost:3000/ingest/stripe \
   -H "Stripe-Signature: t=..." \
   -d @fixtures/stripe/payment_failed.json
 ```
-
+</details>
 ---
 
 ### 2. POST `/ingest/pull-status`
