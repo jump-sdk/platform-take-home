@@ -2,7 +2,7 @@
 
 ## Vendor Signal Normalization & Routing
 
-**Time Estimate:** 3-4 hours  
+**Time Estimate:** 2 hours  
 **Language:** Your choice of Python or TypeScript/Node.js
 
 ---
@@ -13,7 +13,7 @@ Build a small HTTP service that ingests vendor signals from multiple sources (we
 
 This exercise simulates a real-world platform engineering challenge: building reliable, observable infrastructure that integrates multiple third-party services.
 
-*We don't care if you use AI to build this, but be prepared to answer any and all questions about the codebase, why you did certain things and other questions.*
+*We encourage you use AI to build this, but be prepared to answer any and all questions about the codebase, why you did certain things and other questions.*
 
 ---
 
@@ -542,7 +542,7 @@ We'll evaluate based on:
 
 ## Time Expectations
 
-This exercise is designed to take **3-4 hours**. We understand you may not have time to implement everything perfectly. 
+This exercise is designed to take **2 hours**. We understand you may not have time to implement everything perfectly. 
 
 **Prioritize in this order:**
 1. Core endpoints working (stripe ingestion, status polling, events query)
